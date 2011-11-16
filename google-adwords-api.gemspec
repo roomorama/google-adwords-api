@@ -12,11 +12,10 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.summary = 'Ruby Client libraries for AdWords API'
   s.description = "%s is a AdWords API client library for Ruby" % s.name
-  s.files = files
-  s.require_path = 'lib'
-  s.test_files = tests
-  s.has_rdoc = true
-  s.extra_rdoc_files = docs
+
   s.add_dependency('google-ads-common', '~> 0.5.4')
   s.add_dependency('savon', '>= 0.9.7')
+  
+  s.files = `git ls-files`.split("\n")
+  s.require_path = "lib"
 end
