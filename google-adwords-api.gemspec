@@ -1,11 +1,9 @@
 lib = File.expand_path("../lib", __FILE__)
 $:.unshift lib unless $:.include? lib
 
-require 'adwords_api/api_config'
-
 Gem::Specification.new do |s|
   s.name = 'google-adwords-api'
-  s.version = AdwordsApi::ApiConfig::CLIENT_LIB_VERSION
+  s.version = '0.4.4'
   s.author = 'Danial Klimkin'
   s.email = 'api.dklimkin@gmail.com'
   s.homepage = 'http://code.google.com/p/google-api-ads-ruby/'
